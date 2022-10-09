@@ -1,0 +1,3 @@
+/home/mi/myCode/OpenGLtest/build/CMakeFiles/rebuild_cache.dir
+/home/mi/myCode/OpenGLtest/build/CMakeFiles/edit_cache.dir
+/home/mi/myCode/OpenGLtest/build/CMakeFiles/test1.dir
