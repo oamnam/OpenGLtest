@@ -1,2 +1,2 @@
 # OpenGLtest
-learn OpenGL
+learn OpenGL by https://learnopengl-cn.github.io/
