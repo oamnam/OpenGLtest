@@ -208,7 +208,7 @@ CMakeFiles/test1.dir/src/myMain.cpp.o
  ../include/glm/vec4.hpp
  ../include/glm/vector_relational.hpp
  ../include/learnopengl/filesystem.h
- ../include/learnopengl/shader_s.h
+ ../include/learnopengl/shader_m.h
  ../include/stb_image.h
  /home/mi/myCode/OpenGLtest/src/myMain.cpp
  configuration/root_directory.h

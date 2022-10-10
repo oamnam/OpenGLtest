@@ -207,7 +207,7 @@ CMakeFiles/test1.dir/src/myMain.cpp.o: ../include/glm/vec3.hpp
 CMakeFiles/test1.dir/src/myMain.cpp.o: ../include/glm/vec4.hpp
 CMakeFiles/test1.dir/src/myMain.cpp.o: ../include/glm/vector_relational.hpp
 CMakeFiles/test1.dir/src/myMain.cpp.o: ../include/learnopengl/filesystem.h
-CMakeFiles/test1.dir/src/myMain.cpp.o: ../include/learnopengl/shader_s.h
+CMakeFiles/test1.dir/src/myMain.cpp.o: ../include/learnopengl/shader_m.h
 CMakeFiles/test1.dir/src/myMain.cpp.o: ../include/stb_image.h
 CMakeFiles/test1.dir/src/myMain.cpp.o: ../src/myMain.cpp
 CMakeFiles/test1.dir/src/myMain.cpp.o: configuration/root_directory.h

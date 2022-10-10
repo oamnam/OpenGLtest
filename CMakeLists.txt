@@ -49,8 +49,8 @@ TARGET_LINK_LIBRARIES(test1 ${LIBS})
 
 
 file(GLOB SHADER
-        "src/*.vs"
-        "src/*.fs"
+        "src/shaders/*.vs"
+        "src/shaders/*.fs"
         ##"src/${chapter}/${demo}/*.gs"
 	    ## "src/${chapter}/${demo}/*.cs"
     )

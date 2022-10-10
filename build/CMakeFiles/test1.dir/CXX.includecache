@@ -1436,8 +1436,10 @@ cstdlib
 root_directory.h
 ../include/learnopengl/root_directory.h
 
-../include/learnopengl/shader_s.h
+../include/learnopengl/shader_m.h
 glad/glad.h
+-
+glm/glm.hpp
 -
 string
 -
@@ -1493,7 +1495,7 @@ glm/gtc/type_ptr.hpp
 -
 learnopengl/filesystem.h
 -
-learnopengl/shader_s.h
+learnopengl/shader_m.h
 -
 iostream
 -
