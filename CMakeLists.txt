@@ -40,13 +40,37 @@ FIND_LIBRARY(GLFW3_LIBRARY NAMES libglfw3
   set(LIBS ${GLFW3_LIBRARY} dl pthread)
 
   #set (CMAKE_CXX_LINK_EXECUTABLE "${CMAKE_CXX_LINK_EXECUTABLE} -ldl")
+add_library(STB_IMAGE "src/stb_image.cpp")
+set(LIBS ${LIBS} STB_IMAGE)
 
+add_library(GLAD "src/glad.c")
+set(LIBS ${LIBS} GLAD)
 
+set(CHAPTERS
+  1
+  2
+)
 
-add_executable(test1 ${TEST_MATH})
+function(create_project_from_sources chapter)
+    file(GLOB SOURCE
+            "src/${chapter}/*.h"
+            "src/${chapter}/*.cpp"
+            "src/${chapter}/*.vs"
+            "src/${chapter}/*.fs"
+            "src/${chapter}/*.gs"
+            "src/${chapter}/*.cs"
+    )
 
-TARGET_LINK_LIBRARIES(test1 ${LIBS})
+    set(NAME "${chapter}")
+    add_executable(${NAME} ${SOURCE})
+    target_link_libraries(${NAME} ${LIBS})
+endfunction()
 
+foreach(CHAPTER ${CHAPTERS})
+	create_project_from_sources(${CHAPTER})
+endforeach(CHAPTER)
+#add_executable(test1 ${TEST_MATH})
+#TARGET_LINK_LIBRARIES(test1 ${LIBS})
 
 file(GLOB SHADER
         "src/shaders/*.vs"

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/1.dir/src/1/myMain.cpp.o  -o 1  ../lib/libglfw3.a -ldl -lpthread libSTB_IMAGE.a libGLAD.a 

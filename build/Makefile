@@ -111,17 +111,110 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test1
+# Target rules for targets named 2
 
 # Build rule for target.
-test1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test1
-.PHONY : test1
+2 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2
+.PHONY : 2
 
 # fast build rule for target.
-test1/fast:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/build
-.PHONY : test1/fast
+2/fast:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/build
+.PHONY : 2/fast
+
+#=============================================================================
+# Target rules for targets named 1
+
+# Build rule for target.
+1 : cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 1
+.PHONY : 1
+
+# fast build rule for target.
+1/fast:
+	$(MAKE) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/build
+.PHONY : 1/fast
+
+#=============================================================================
+# Target rules for targets named GLAD
+
+# Build rule for target.
+GLAD: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 GLAD
+.PHONY : GLAD
+
+# fast build rule for target.
+GLAD/fast:
+	$(MAKE) -f CMakeFiles/GLAD.dir/build.make CMakeFiles/GLAD.dir/build
+.PHONY : GLAD/fast
+
+#=============================================================================
+# Target rules for targets named STB_IMAGE
+
+# Build rule for target.
+STB_IMAGE: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 STB_IMAGE
+.PHONY : STB_IMAGE
+
+# fast build rule for target.
+STB_IMAGE/fast:
+	$(MAKE) -f CMakeFiles/STB_IMAGE.dir/build.make CMakeFiles/STB_IMAGE.dir/build
+.PHONY : STB_IMAGE/fast
+
+src/1/myMain.o: src/1/myMain.cpp.o
+
+.PHONY : src/1/myMain.o
+
+# target to build an object file
+src/1/myMain.cpp.o:
+	$(MAKE) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/src/1/myMain.cpp.o
+.PHONY : src/1/myMain.cpp.o
+
+src/1/myMain.i: src/1/myMain.cpp.i
+
+.PHONY : src/1/myMain.i
+
+# target to preprocess a source file
+src/1/myMain.cpp.i:
+	$(MAKE) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/src/1/myMain.cpp.i
+.PHONY : src/1/myMain.cpp.i
+
+src/1/myMain.s: src/1/myMain.cpp.s
+
+.PHONY : src/1/myMain.s
+
+# target to generate assembly for a file
+src/1/myMain.cpp.s:
+	$(MAKE) -f CMakeFiles/1.dir/build.make CMakeFiles/1.dir/src/1/myMain.cpp.s
+.PHONY : src/1/myMain.cpp.s
+
+src/2/myMain_light.o: src/2/myMain_light.cpp.o
+
+.PHONY : src/2/myMain_light.o
+
+# target to build an object file
+src/2/myMain_light.cpp.o:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/src/2/myMain_light.cpp.o
+.PHONY : src/2/myMain_light.cpp.o
+
+src/2/myMain_light.i: src/2/myMain_light.cpp.i
+
+.PHONY : src/2/myMain_light.i
+
+# target to preprocess a source file
+src/2/myMain_light.cpp.i:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/src/2/myMain_light.cpp.i
+.PHONY : src/2/myMain_light.cpp.i
+
+src/2/myMain_light.s: src/2/myMain_light.cpp.s
+
+.PHONY : src/2/myMain_light.s
+
+# target to generate assembly for a file
+src/2/myMain_light.cpp.s:
+	$(MAKE) -f CMakeFiles/2.dir/build.make CMakeFiles/2.dir/src/2/myMain_light.cpp.s
+.PHONY : src/2/myMain_light.cpp.s
 
 src/glad.o: src/glad.c.o
 
@@ -129,7 +222,7 @@ src/glad.o: src/glad.c.o
 
 # target to build an object file
 src/glad.c.o:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/src/glad.c.o
+	$(MAKE) -f CMakeFiles/GLAD.dir/build.make CMakeFiles/GLAD.dir/src/glad.c.o
 .PHONY : src/glad.c.o
 
 src/glad.i: src/glad.c.i
@@ -138,7 +231,7 @@ src/glad.i: src/glad.c.i
 
 # target to preprocess a source file
 src/glad.c.i:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/src/glad.c.i
+	$(MAKE) -f CMakeFiles/GLAD.dir/build.make CMakeFiles/GLAD.dir/src/glad.c.i
 .PHONY : src/glad.c.i
 
 src/glad.s: src/glad.c.s
@@ -147,35 +240,8 @@ src/glad.s: src/glad.c.s
 
 # target to generate assembly for a file
 src/glad.c.s:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/src/glad.c.s
+	$(MAKE) -f CMakeFiles/GLAD.dir/build.make CMakeFiles/GLAD.dir/src/glad.c.s
 .PHONY : src/glad.c.s
-
-src/myMain.o: src/myMain.cpp.o
-
-.PHONY : src/myMain.o
-
-# target to build an object file
-src/myMain.cpp.o:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/src/myMain.cpp.o
-.PHONY : src/myMain.cpp.o
-
-src/myMain.i: src/myMain.cpp.i
-
-.PHONY : src/myMain.i
-
-# target to preprocess a source file
-src/myMain.cpp.i:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/src/myMain.cpp.i
-.PHONY : src/myMain.cpp.i
-
-src/myMain.s: src/myMain.cpp.s
-
-.PHONY : src/myMain.s
-
-# target to generate assembly for a file
-src/myMain.cpp.s:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/src/myMain.cpp.s
-.PHONY : src/myMain.cpp.s
 
 src/stb_image.o: src/stb_image.cpp.o
 
@@ -183,7 +249,7 @@ src/stb_image.o: src/stb_image.cpp.o
 
 # target to build an object file
 src/stb_image.cpp.o:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/src/stb_image.cpp.o
+	$(MAKE) -f CMakeFiles/STB_IMAGE.dir/build.make CMakeFiles/STB_IMAGE.dir/src/stb_image.cpp.o
 .PHONY : src/stb_image.cpp.o
 
 src/stb_image.i: src/stb_image.cpp.i
@@ -192,7 +258,7 @@ src/stb_image.i: src/stb_image.cpp.i
 
 # target to preprocess a source file
 src/stb_image.cpp.i:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/src/stb_image.cpp.i
+	$(MAKE) -f CMakeFiles/STB_IMAGE.dir/build.make CMakeFiles/STB_IMAGE.dir/src/stb_image.cpp.i
 .PHONY : src/stb_image.cpp.i
 
 src/stb_image.s: src/stb_image.cpp.s
@@ -201,7 +267,7 @@ src/stb_image.s: src/stb_image.cpp.s
 
 # target to generate assembly for a file
 src/stb_image.cpp.s:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/src/stb_image.cpp.s
+	$(MAKE) -f CMakeFiles/STB_IMAGE.dir/build.make CMakeFiles/STB_IMAGE.dir/src/stb_image.cpp.s
 .PHONY : src/stb_image.cpp.s
 
 # Help Target
@@ -211,14 +277,20 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... 2"
+	@echo "... 1"
 	@echo "... edit_cache"
-	@echo "... test1"
+	@echo "... GLAD"
+	@echo "... STB_IMAGE"
+	@echo "... src/1/myMain.o"
+	@echo "... src/1/myMain.i"
+	@echo "... src/1/myMain.s"
+	@echo "... src/2/myMain_light.o"
+	@echo "... src/2/myMain_light.i"
+	@echo "... src/2/myMain_light.s"
 	@echo "... src/glad.o"
 	@echo "... src/glad.i"
 	@echo "... src/glad.s"
-	@echo "... src/myMain.o"
-	@echo "... src/myMain.i"
-	@echo "... src/myMain.s"
 	@echo "... src/stb_image.o"
 	@echo "... src/stb_image.i"
 	@echo "... src/stb_image.s"
