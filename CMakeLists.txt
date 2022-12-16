@@ -18,7 +18,6 @@ set( _glfw3_LIB_SEARCH_DIRS
 "${CMAKE_SOURCE_DIR}/lib"
  )
 
-
 configure_file(configuration/root_directory.h.in configuration/root_directory.h)
 include_directories(${CMAKE_BINARY_DIR}/configuration)
 
