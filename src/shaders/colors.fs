@@ -9,10 +9,17 @@ struct Material {
 
 struct Light {
 	vec3 position;
+	vec3 direction;
+	float cutOff;
+	float outerCutOff;
 	
 	vec3 ambient;
 	vec3 diffuse;
 	vec3 specular;
+	
+	float constant;
+	float linear;
+	float quadratic;
 };
 
 in vec3 Normal;
@@ -39,6 +46,13 @@ void main()
     vec3 reflectDir = reflect(-lightDir, norm);
     float spec = pow(max(dot(viewDir, reflectDir), 0.0), material.shininess);
     vec3 specular = light.specular * spec * texture(material.specular, TexCoords).rgb;
+    
+    //spotlight
+    float theta = dot(lightDir, normalize(-light.direction));
+    float epsilon = (light.cutOff - light.outerCutOff);
+    
+    
+    
     
     vec3 result = ambient + diffuse + specular;
     FragColor = vec4(result, 1.0);
